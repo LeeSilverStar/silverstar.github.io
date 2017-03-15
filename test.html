@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/common.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>S.I.VILLAGE 내 손안의 부티크</title>
+  <style type="text/css">
+    .sivEvent .main-img {margin: 0 auto;}
+    .sivEvent .event_tab-menu {width: 1200px; margin: 70px auto 0;}
+    .sivEvent .event_tab-menu:after {content: ''; display: table; clear: both;}
+    .sivEvent .event_tab-menu .list-item {float:left; width: 588px; height: 68px; text-align: center; border: 1px solid #bbb;}
+    .sivEvent .event_tab-menu .list-item .item-title {display: block; height: 100%;}
+    .sivEvent .event_tab-menu .list-item:last-child {margin-left: 20px;}
+    .sivEvent .event_tab-menu .is-active {width: 582px; height: 62px; border: 4px solid #000;}
+    .sivEvent .sivInfo {margin: 99px auto 0; text-align: center; background-color: #f0f0f0;}
+  </style>
+  <script type="text/javascript">
+    $(function(){
+      $("#family_sale_tabs").tabs();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="sivEvent" id="family_sale_tabs">
+    <div class="main-img"><img src="image/family_sale_visual.jpg" alt="FAMILY SALE UP TO 70% OFF"></div>
+    <!-- tab menu -->
+    <ul class="event_tab-menu">
+      <li class="list-item  is-active"><a href="#good-list01" class="item-title">CELINE</a></li>
+      <li class="list-item"><a href="#good-list02" class="item-title">CELINE</a></li>
+    </ul>
+    <!-- //tab menu -->
+
+    <!-- contents -->
+    <ul id="good-list01">
+      <li>
+        <img src="image/family_sale_goods01_1.jpg" alt="">
+
+        <button type="button">구매하기</button>
+      </li>
+    </ul>
+    <ul id="good-list02">
+      <li>
+        <img src="image/family_sale_goods02_1.jpg" alt="">
+        <map name="Map" id="Map">
+          <area shape="rect" coords="85,297,148,314" href="#" onclick="MM_openBrWindow('경로.html','','width=300,height=300')" />
+        </map>
+      </li>
+    </ul>
+    <!-- //contents -->
+
+    <!-- 알려드립니다. -->
+    <div class="sivInfo"><img src="image/family_sale_info.jpg" alt="알려드립니다."></div>
+    <!-- 알려드립니다. -->
+  </div>
+</body>
+</html>
