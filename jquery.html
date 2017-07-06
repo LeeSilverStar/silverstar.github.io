@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="jquery/jquery-1.10.2.min.js"></script>
+  <title>JQUERY</title>
+  <style>
+    ul li {display: inline-block;}
+  </style>
+  <script type="text/javascript">
+    $(function(){
+      $("a").one("click", function(){
+        $("img").attr("src", $(this).attr("href"))
+                .attr("alt", $(this).text());
+        return false;
+      });
+      $("button").click(function(){
+        $("a").unbind("click");
+      });
+    });
+  </script>
+</head>
+<body>
+  <button>취소</button>
+  <ul>
+    <li><a href="./image/img01.jpg">야호1</a></li>
+    <li><a href="./image/img02.jpg">야호2</a></li>
+    <li><a href="./image/img03.jpg">야호3</a></li>
+    <li><a href="./image/img04.jpg">야호4</a></li>
+    <li><a href="./image/img05.jpg">야호5</a></li>
+  </ul>
+  <p><img src="./image/img06.jpg" alt="야호6"></p>
+</body>
+</html>

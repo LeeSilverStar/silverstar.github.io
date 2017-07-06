@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>이미지 호버 기능</title>
+  <style>
+  .hover_wrap {
+    width: 300px;
+    height: 468px;
+    border:1px solid yellow;
+    overflow: hidden;
+  }
+  .hover_wrap img {
+    vertical-align: top;
+    transition: all 0.5s ease 0.3s;
+  }
+  .hover_wrap span {
+    display: block;
+    width: 300px;
+    height: 468px;
+    text-align: center;
+    color: #fff;
+    background: rgba(255,0,0,0.5);
+    transition: all 0.5s ease 0.3s;
+  }
+  .hover_wrap:hover img {
+    transform: scale(1.5);
+  }
+  .hover_wrap:hover span {
+    transform: translateY(-468px);
+  }
+  </style>
+</head>
+<body>
+  <div class="hover_wrap">
+    <img src="image/family_sale_goods01_1.jpg" alt="가방1">
+    <span>파일 확인 완료하였습니다. 제가 항공권 예약 후 DM 하단 배너 확인한 결과, 반영은 되지 않은 것 같습니다.ㅠㅠ 혹시 반영은 다른쪽에 문의드려야 하나요?</span>
+  </div>
+</body>
+</html>
